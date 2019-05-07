@@ -1,0 +1,29 @@
+#
+# Mini-Ciruits ZT-261 (custom)
+#
+# Parameters:
+#   $1 = component, command prefix (ex. SPDT or SP8T)
+#   $2 = window/location number [1-6]
+#
+# Author: Wesley Moore
+# Date:   Feb 2019
+#
+
+OutTerminator = CR LF;
+InTerminator = LF CR;
+writetimeout = 100;
+readtimeout = 500;     # milliseconds
+replytimeout = 1000;
+ExtraInput = Ignore;
+
+###################################
+# INPUTS
+###################################
+getState {
+	out ":\$1:\$2:STATE?";
+    in "%d";
+}
+
+setState {
+    out ":\$1:\$2:STATE:%d";
+}

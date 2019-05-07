@@ -1,0 +1,97 @@
+#
+# Mini-Ciruits SP8T component 
+#
+# Macros:
+#   P = prefix
+#   R = prefix
+#   W = window/slot
+#   PORT = asyn port name
+#
+# Author: Wesley Moore
+# Date:   Feb 2019
+#
+
+record(ai, "$(P)$(R)$(W):STATE") {
+    field(DTYP, "stream")
+    field(INP,  "@ZT261.proto getState(SP8T,$(W)) $(PORT)")
+    field(SCAN, "1 second")
+    field(FLNK, "$(P)$(R)$(W):OFFSET")
+}
+
+record(mbbo, "$(P)$(R)$(W):STATE:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@ZT261.proto setState(SP8T,$(W)) $(PORT)")
+    field(ZRST, "$(CM) CAV1")
+    field(ZRVL, "1")
+    field(ONST, "$(CM) CAV2")
+    field(ONVL, "2")
+    field(TWST, "$(CM) CAV3")
+    field(TWVL, "3")
+    field(THST, "$(CM) CAV4")
+    field(THVL, "4")
+    field(FRST, "$(CM) CAV5")
+    field(FRVL, "5")
+    field(FVST, "$(CM) CAV6")
+    field(FVVL, "6")
+    field(SXST, "$(CM) CAV7")
+    field(SXVL, "7")
+    field(SVST, "$(CM) CAV8")
+    field(SVVL, "8")
+    info(autosaveFields_pass0, "VAL")
+}
+
+#
+# Offsets
+#
+record(sel, "$(P)$(R)$(W):OFFSET") {
+    field(INPB, "$(P)$(CM):CAV1_OFFSET")
+    field(INPC, "$(P)$(CM):CAV2_OFFSET")
+    field(INPD, "$(P)$(CM):CAV3_OFFSET")
+    field(INPE, "$(P)$(CM):CAV4_OFFSET")
+    field(INPF, "$(P)$(CM):CAV5_OFFSET")
+    field(INPG, "$(P)$(CM):CAV6_OFFSET")
+    field(INPH, "$(P)$(CM):CAV7_OFFSET")
+    field(INPI, "$(P)$(CM):CAV8_OFFSET")
+    field(NVL,  "$(P)$(R)$(W):STATE")
+}
+
+record(ai, "$(P)$(CM):CAV1_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV2_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV3_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV4_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV5_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV6_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV7_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(CM):CAV8_OFFSET") {
+    field(PREC, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+

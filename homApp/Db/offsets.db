@@ -1,0 +1,29 @@
+#
+# Mini-Ciruits Power Head (Model PWR-8P-RC) 
+#
+# Macros:
+#   P = prefix
+#   R = prefix
+#   PORT = asyn port name
+#
+# Author: Wesley Moore
+# Date:   Mar 2019
+#
+
+# SW2 - X offset
+record(sel, "$(P)$(R)2:OFFSET") {
+    field(INPB, "$(P)$(R)1:OFFSET")
+    field(INPC, "$(P)$(R)3:OFFSET")
+    field(NVL,  "$(P)$(R)2:STATE")
+    field(SCAN, ".5 second")
+}
+
+# SW5 - Y offset
+record(sel, "$(P)$(R)5:OFFSET") {
+    field(INPB, "$(P)$(R)4:OFFSET")
+    field(INPC, "$(P)$(R)6:OFFSET")
+    field(NVL,  "$(P)$(R)5:STATE")
+    field(SCAN, ".5 second")
+}
+
+

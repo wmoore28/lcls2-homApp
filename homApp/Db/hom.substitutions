@@ -1,0 +1,43 @@
+#
+# Mini-Ciruits ZT-261 (custom)
+#
+# Custom configuration:
+#   Window 1: SP8T
+#   Window 2: SPDT
+#   Window 3: SP8T
+#   Window 4: SP8T
+#   Window 5: SPDT
+#   Window 6: SP8T
+#
+# Author: Wesley Moore
+# Date:   Feb 2019
+#
+
+# 8-channel
+file "db/ZT261-SP8T.db" {
+pattern{ P, R, W, PORT, CM }
+    { "HOM:", "SW", "1", "ETH0", "CM1-X" }
+    { "HOM:", "SW", "3", "ETH0", "CM2-X" }
+    { "HOM:", "SW", "4", "ETH0", "CM1-Y" }
+    { "HOM:", "SW", "6", "ETH0", "CM2-Y" }
+}
+
+# 2-channel
+file "db/ZT261-SPDT.db" {
+pattern{ P, R, W, PORT, OPT1, OPT2 }
+    { "HOM:", "SW", "2", "ETH0", "CM1-X", "CM2-X" }
+    { "HOM:", "SW", "5", "ETH0", "CM1-Y", "CM2-Y" }
+}
+
+# Powerheads
+file "db/PWR-xP.db" {
+pattern{ P, R, PORT }
+    { "HOM:", "PWR1:", "ETH1" }
+    { "HOM:", "PWR2:", "ETH2" }
+}
+
+# Offsets
+file "db/offsets.db" {
+pattern{ P, R }
+    { "HOM:", "SW" }
+}

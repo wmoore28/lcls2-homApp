@@ -1,0 +1,72 @@
+#
+# Mini-Ciruits PWR-xP Series power sensors
+#
+# Author: Wesley Moore
+# Date:   Mar 2019
+#
+
+OutTerminator = CR LF;
+InTerminator = LF CR;
+writetimeout = 100;
+readtimeout = 500;     # milliseconds
+replytimeout = 1000;
+ExtraInput = Ignore;
+
+###################################
+# INPUTS
+###################################
+getTrigMode {
+	out ":TRIGGER:MODE?";
+    in "%s";
+}
+
+setTrigMode {
+    out ":TRIGGER:MODE:%s";
+}
+
+getTrigType {
+    out ":TRIGGER:EXTERNAL?";
+    in "%d";
+}
+
+setTrigType {
+    out ":TRIGGER:EXTERNAL:%s";
+}
+
+getTrigDly {
+    out ":TRIGGER:DELAY?";
+    in "%d";
+}
+
+setTrigDly {
+    out ":TRIGGER:DELAY:%d";
+}
+
+getSampTime {
+    out ":SAMPLETIME?";
+    in "%d";
+}
+
+setSampTime {
+    out ":SAMPLETIME:%d";
+}
+
+getFreq {
+    out ":FREQ?";
+    in "%d";
+}
+
+setFreq {
+    out ":FREQ:%d";
+}
+
+getPwrPeak {
+    out ":POWER?";
+    in "%f dBm %*f dBm";
+}
+
+getPwrAvg {
+    out ":POWER?";
+    in "%*f dBm %f dBm";
+}
+

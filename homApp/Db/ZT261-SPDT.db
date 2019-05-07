@@ -1,0 +1,29 @@
+#
+# Mini-Ciruits SPDT component 
+#
+# Macros:
+#   P = prefix
+#   R = prefix
+#   W = window/slot
+#   PORT = asyn port name
+#
+# Author: Wesley Moore
+# Date:   Feb 2019
+#
+
+record(ai, "$(P)$(R)$(W):STATE") {
+    field(DTYP, "stream")
+    field(INP,  "@ZT261.proto getState(SPDT,$(W)) $(PORT)")
+    field(SCAN, "1 second")
+}
+
+record(mbbo, "$(P)$(R)$(W):STATE:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@ZT261.proto setState(SPDT,$(W)) $(PORT)")
+    field(ZRST, "$(OPT1)")
+    field(ZRVL, "1")
+    field(ONST, "$(OPT2)")
+    field(ONVL, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+

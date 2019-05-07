@@ -1,0 +1,1476 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 589
+y 345
+w 500
+h 300
+font "helvetica-medium-r-10.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 18
+ctlBgColor1 index 4
+ctlBgColor2 index 4
+topShadowColor index 1
+botShadowColor index 11
+title "LCLS2 Home Screen: Electron Beam Systems"
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -4
+y 0
+w 1208
+h 40
+lineColor index 71
+fill
+fillColor index 65
+lineWidth 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 248
+y 80
+w 32
+h 24
+fgColor index 14
+bgColor index 7
+topShadowColor index 7
+botShadowColor index 7
+font "helvetica-medium-r-10.0"
+yPosOffset -21
+buttonLabel "Global"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+closeAction {
+  0 1
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=$(subsys),y=$(y)"
+}
+replaceSymbols {
+  0 1
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 296
+y 80
+w 32
+h 24
+fgColor index 14
+bgColor index 7
+topShadowColor index 7
+botShadowColor index 7
+font "helvetica-medium-r-10.0"
+yPosOffset -21
+buttonLabel "L1B"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+closeAction {
+  0 1
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=$(subsys),y=$(y)"
+}
+replaceSymbols {
+  0 1
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 112
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=mgnt,y=3"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 112
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 112
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "MGNT:GLOBAL2:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 112
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "MGNT:GLOBAL2:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 112
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=mgnt,y=3"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 112
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 112
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "MGNT:L1B:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 112
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "MGNT:L1B:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 144
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=rf,y=8"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 144
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 144
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "RF:GLOBAL2:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 144
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "RF:GLOBAL2:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 144
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=rf,y=8"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 144
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 144
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "RF:L1B:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 144
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "RF:L1B:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 176
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=cryo,y=18"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 176
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 176
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "CRYO:GLOBAL2:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 176
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "CRYO:GLOBAL2:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 176
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=cryo,y=8"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 176
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 176
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "CRYO:L1B:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 176
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "CRYO:L1B:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 208
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=ntwk,y=10"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 208
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 208
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "NTWK:GLOBAL2:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 208
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "NTWK:GLOBAL2:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 208
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=ntwk,y=10"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 208
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 208
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "NTWK:L1B:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 208
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "NTWK:L1B:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 240
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=vac,y=12"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 240
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 240
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "VAC:GLOBAL2:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 240
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "VAC:GLOBAL2:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 240
+w 32
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 3
+botShadowColor index 3
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=vac,y=12"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 240
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 4
+lineWidth 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 240
+w 32
+h 24
+lineColor index 3
+fill
+fillColor index 16
+fillAlarm
+lineWidth 4
+alarmPv "VAC:L1B:1:STATSUMY.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 240
+w 32
+h 24
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 4
+useDisplayBg
+visPv "VAC:L1B:1:STATSUMYFP.SEVR"
+visMin "1"
+visMax "2"
+value {
+  "*"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 80
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Applications"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=all,y=0"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 112
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Magnet"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=mgnt,y=3"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 144
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "RF"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=rf,y=8"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 208
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Network"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=ntwk,y=10"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 240
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Vacuum"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=vac,y=12"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 124
+y 176
+w 120
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Cryo System"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=cryo,y=18"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 296
+y 80
+w 40
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "L1B"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=l1b,x=4,EVGLOCA=$(EVGLOCA),subsys=all,y=0"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 248
+y 80
+w 40
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "Global"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_systemarea"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "area=global,x=0,EVGLOCA=$(EVGLOCA),subsys=all,y=0"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 8
+w 40
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+label "Exit"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 300
+y 8
+w 96
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Home Screen"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lerf_main"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 0
+w 516
+h 40
+font "helvetica-bold-i-18.0"
+fgColor index 14
+bgColor index 7
+useDisplayBg
+value {
+  "LCLS-II LERF Home Screen"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 352
+y 80
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "Access Controls"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "../imported/security/IOC_O_lcls_login.edl"
+  1 "../imported/security/IOC_O_lcls_secure.edl"
+}
+menuLabel {
+  0 "Login Control"
+  1 "Channel Access Control"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 352
+y 112
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "Fluxgates"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "../imported/fluxgates/LERF_Fluxgate.edl"
+}
+menuLabel {
+  0 "Fluxgates"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 352
+y 144
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "JLAB Cryo"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "../imported/cryo/LCLS2CM.edl"
+  1 "../imported/flowmeters/CHL_O_LCLS2_flowMeters.edl"
+}
+menuLabel {
+  0 "JLAB Cryo System"
+  1 "Flow Meters"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 352
+y 240
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "Ops Tools"
+numCmds 2
+commandLabel {
+  0 "livePlot"
+  1 "myaPlot"
+}
+command {
+  0 "/usr/csite/certified/bin/livePlot &"
+  1 "/usr/csite/certified/bin/myaPlot &"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 352
+y 208
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "StripTool"
+multipleInstances
+numCmds 1
+command {
+  0 "StripTool &"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 352
+y 176
+w 108
+h 28
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-10.0"
+buttonLabel "HOM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "../imported/hom/hom.edl"
+}
+menuLabel {
+  0 "HOM"
+}
+endObjectProperties
+

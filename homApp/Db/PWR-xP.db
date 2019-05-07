@@ -1,0 +1,149 @@
+#
+# Mini-Ciruits Power Head (Model PWR-8P-RC) 
+#
+# Macros:
+#   P = prefix
+#   R = prefix
+#   PORT = asyn port name
+#
+# Author: Wesley Moore
+# Date:   Mar 2019
+#
+
+#
+# TRIGGER
+#
+record(mbbi, "$(P)$(R)TRIG_MODE") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getTrigMode $(PORT)")
+    field(ZRST, "FREE")
+    field(ZRVL, "0")
+    field(ONST, "INTERNAL")
+    field(ONVL, "1")
+    field(TWST, "EXTERNAL")
+    field(TWVL, "2")
+    field(SCAN, "5 second")
+}
+
+record(mbbo, "$(P)$(R)TRIG_MODE:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@PWR-xP.proto setTrigMode $(PORT)")
+    field(ZRST, "FREE")
+    field(ZRVL, "0")
+    field(ONST, "INTERNAL")
+    field(ONVL, "1")
+    field(TWST, "EXTERNAL")
+    field(TWVL, "2")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(mbbi, "$(P)$(R)TRIG_TYPE") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getTrigType $(PORT)")
+    field(ZRST, "ONFALL")
+    field(ZRVL, "0")
+    field(ONST, "ONRISE")
+    field(ONVL, "1")
+    field(SCAN, "5 second")
+}
+
+record(mbbo, "$(P)$(R)TRIG_TYPE:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@PWR-xP.proto setTrigType $(PORT)")
+    field(ZRST, "ONFALL")
+    field(ZRVL, "0")
+    field(ONST, "ONRISE")
+    field(ONVL, "1")
+    info(autosaveFields_pass0, "VAL")
+}
+
+record(ai, "$(P)$(R)TRIG_DLY") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getTrigDly $(PORT)")
+    field(EGU,  "uS")
+    field(SCAN, "5 second")
+}
+
+record(ao, "$(P)$(R)TRIG_DLY:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@PWR-xP.proto setTrigDly $(PORT)")
+    field(EGU,  "uS")
+    info(autosaveFields_pass0, "VAL")
+}
+
+#
+# SAMPLE TIME
+#
+record(ai, "$(P)$(R)SAMPLE_TIME") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getSampTime $(PORT)")
+    field(EGU,  "uS")
+    field(SCAN, "5 second")
+}
+
+record(ao, "$(P)$(R)SAMPLE_TIME:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@PWR-xP.proto setSampTime $(PORT)")
+    field(EGU,  "uS")
+    field(DRVL, "10")
+    field(DRVH, "1000000")
+    field(LOPR, "10")
+    field(HOPR, "1000000")
+    info(autosaveFields_pass0, "VAL")
+}
+
+#
+# COMPENSATION FREQ
+#
+record(ai, "$(P)$(R)FREQ") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getFreq $(PORT)")
+    field(PREC, "3")
+    field(EGU,  "MHz")
+    field(SCAN, "5 second")
+}
+
+record(ao, "$(P)$(R)FREQ:SET") {
+    field(DTYP, "stream")
+    field(OUT,  "@PWR-xP.proto setFreq $(PORT)")
+    field(PREC, "3")
+    info(autosaveFields_pass0, "VAL")
+}
+
+#
+# POWER
+#
+record(ai, "$(P)$(R)POWER_PEAK_RAW") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getPwrPeak $(PORT)")
+    field(PREC, "3")
+    field(EGU,  "dBm")
+    field(SCAN, "5 second")
+    field(FLNK, "$(P)$(R)POWER_PEAK.PROC")
+}
+
+record(calc, "$(P)$(R)POWER_PEAK") {
+    field(CALC, "A+B")
+    field(INPA, "$(P)$(R)POWER_PEAK_RAW")
+    # INPB offset
+    field(PREC, "3")
+    field(EGU,  "dBm")
+}
+
+record(ai, "$(P)$(R)POWER_AVG_RAW") {
+    field(DTYP, "stream")
+    field(INP,  "@PWR-xP.proto getPwrAvg $(PORT)")
+    field(PREC, "3")
+    field(EGU,  "dBm")
+    field(SCAN, "5 second")
+    field(FLNK, "$(P)$(R)POWER_AVG.PROC")
+}
+
+record(calc, "$(P)$(R)POWER_AVG") {
+    field(CALC, "A+B")
+    field(INPA, "$(P)$(R)POWER_AVG_RAW")
+    # INPB offset
+    field(PREC, "3")
+    field(EGU,  "dBm")
+}
+
